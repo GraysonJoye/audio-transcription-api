@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(py -3.11 -m pytest tests/ -v)",
+      "Bash(where python:*)",
+      "Bash(python -m pip show pytest fastapi sqlalchemy)",
+      "Bash(python -m pip install pytest httpx sqlalchemy python-dotenv)",
+      "Bash(python -m pip install python-multipart)",
+      "Bash(docker ps:*)",
+      "Bash(docker exec:*)",
+      "Bash(MSYS_NO_PATHCONV=1 docker exec audio-transcription-api-db-1 cat /var/lib/postgresql/data/pg_hba.conf 2>&1)",
+      "Bash(MSYS_NO_PATHCONV=1 docker exec audio-transcription-api-db-1 env)",
+      "Bash(MSYS_NO_PATHCONV=1 docker exec audio-transcription-api-db-1 psql -U postgres -d transcription_db -c \"SELECT 1\" 2>&1)",
+      "Bash(python -c \":*)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist /FI \"PID eq 9648\" /FO LIST)",
+      "Bash(tasklist /FI \"PID eq 33848\" /FO LIST)",
+      "Bash(powershell -Command \"Get-Process -Id 9648, 33848 | Select-Object Id, ProcessName, Path\" 2>&1)",
+      "Bash(docker-compose down:*)",
+      "Bash(docker-compose up:*)",
+      "Bash(venv/Scripts/python debug_diarize.py)",
+      "Bash(python -m pytest --tb=short)"
+    ]
+  }
+}

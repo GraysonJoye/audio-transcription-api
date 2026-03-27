@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-multipart
+openai-whisper
+pyannote.audio
+torch
+torchaudio
+python-dotenv
+pytest
+httpx
